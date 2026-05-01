@@ -20,7 +20,7 @@ const packages = [
 const eventTypes = [
   { title: 'Corporate Events', img: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=700&q=80', desc: 'Product launches to annual galas crafted to impress.' },
   { title: 'Luxury Weddings', img: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=700&q=80', desc: 'Dream weddings with timeless elegance and precision.' },
-  { title: 'Fashion Events', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80', desc: 'High-energy runway shows capturing the essence of style.' },
+  { title: 'Fashion Events', img: 'https://images.unsplash.com/photo-1537832816519-689ad163238b?w=700&q=80', desc: 'High-energy runway shows capturing the essence of style.' },
   { title: 'Private Parties', img: 'https://images.unsplash.com/photo-1470753937643-efeb931202a9?w=700&q=80', desc: 'Exclusive celebrations designed around your personal vision.' },
 ];
 

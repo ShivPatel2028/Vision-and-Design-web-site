@@ -114,7 +114,7 @@ export default function BrandingIdentityPage() {
           <div className="grid md:grid-cols-2 gap-8">
             {[
               { client: 'Luxe Retail Group', result: 'Brand awareness up 280%', img: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80', desc: 'A complete rebrand transforming a regional retailer into a premium lifestyle destination.' },
-              { client: 'Fashion Forward', result: '3× social engagement', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80', desc: 'New brand identity that captured the essence of modern luxury fashion and drove massive growth.' },
+              { client: 'Fashion Forward', result: '3× social engagement', img: 'https://images.unsplash.com/photo-1537832816519-689ad163238b?w=800&q=80', desc: 'New brand identity that captured the essence of modern luxury fashion and drove massive growth.' },
             ].map((cs, i) => (
               <AnimatedSection key={cs.client} delay={i * 0.1}>
                 <div className="group glass-dark rounded-2xl overflow-hidden border border-white/5 hover:border-[#C8A97E]/20 card-hover">

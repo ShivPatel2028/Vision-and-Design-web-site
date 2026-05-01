@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const services = [
-  { title: 'Runway Coordination', desc: 'End-to-end runway show management from model briefing to final walk.', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80' },
+  { title: 'Runway Coordination', desc: 'End-to-end runway show management from model briefing to final walk.', img: 'https://images.unsplash.com/photo-1537832816519-689ad163238b?w=700&q=80' },
   { title: 'Model Management', desc: 'Curated model selection, training, and coordination for any fashion event.', img: 'https://images.unsplash.com/photo-1536766820879-059fec98ec0a?w=700&q=80' },
   { title: 'Show Planning', desc: 'Comprehensive fashion show planning — music, lighting, staging, and choreography.', img: 'https://images.unsplash.com/photo-1571513722275-4b41940f54b8?w=700&q=80' },
   { title: 'Event Choreography', desc: 'Creative choreography for brand events, product launches, and fashion galas.', img: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=700&q=80' },
@@ -24,7 +24,7 @@ export default function FashionChoreographyPage() {
       {/* Cinematic editorial hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=80" alt="Fashion Choreography" fill className="object-cover" />
+          <Image src="https://images.unsplash.com/photo-1537832816519-689ad163238b?w=1800&q=80" alt="Fashion Choreography" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#070707] via-[#070707]/70 to-[#070707]/20" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#070707] via-transparent to-transparent" />
         </div>

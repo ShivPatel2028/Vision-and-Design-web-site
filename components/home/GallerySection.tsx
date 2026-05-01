@@ -7,7 +7,7 @@ const galleryImages = [
   { src: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&q=80', alt: 'Digital design' },
   { src: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80', alt: 'Interior design' },
   { src: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&q=80', alt: 'Event management', span: 'col-span-2' },
-  { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80', alt: 'Fashion show' },
+  { src: 'https://images.unsplash.com/photo-1537832816519-689ad163238b?w=600&q=80', alt: 'Fashion show' },
 ];
 
 export default function GallerySection() {
