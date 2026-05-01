@@ -4,8 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown, Sun, Moon } from 'lucide-react';
-import { useTheme } from 'next-themes';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { NAV_ITEMS, SITE_CONFIG } from '@/lib/constants';
 
 export default function Navbar() {
@@ -13,7 +12,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [megaMenuOpen, setMegaMenuOpen] = useState(false);
   const pathname = usePathname();
-  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -104,13 +102,6 @@ export default function Navbar() {
 
           {/* Right Actions */}
           <div className="hidden lg:flex items-center gap-3">
-            <button
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className="w-9 h-9 rounded-full glass flex items-center justify-center text-white/70 hover:text-[#C8A97E] transition-colors duration-200"
-              aria-label="Toggle theme"
-            >
-              {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-            </button>
             <Link
               href="/contact"
               className="btn-gold px-5 py-2 rounded-full text-sm"

@@ -81,7 +81,7 @@ export default function ConstructionPage() {
             {[
               { img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=80', alt: 'Commercial building', span: 'col-span-2 row-span-2' },
               { img: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=500&q=80', alt: 'Construction site' },
-              { img: 'https://images.unsplash.com/photo-1590912551709-0e3a27f92b4c?w=500&q=80', alt: 'Architecture' },
+              { img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&q=80', alt: 'Architecture' },
               { img: 'https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=700&q=80', alt: 'Residential', span: 'col-span-2' },
             ].map((item, i) => (
               <div key={i} className={`${item.span || ''} img-zoom rounded-2xl overflow-hidden relative aspect-video`}>
