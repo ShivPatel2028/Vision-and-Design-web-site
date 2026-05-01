@@ -212,20 +212,6 @@ export default function HeroSection() {
         </motion.div>
       </motion.div>
 
-      {/* Floating mouse-follow element */}
-      <motion.div
-        animate={{ x: mousePos.x * 0.4, y: mousePos.y * 0.4 }}
-        transition={{ type: 'spring', stiffness: 60, damping: 20 }}
-        className="absolute top-1/3 right-[8%] z-10 hidden xl:block pointer-events-none"
-      >
-        <div className="glass-gold rounded-2xl p-5 w-44 animate-floating-slow">
-          <div className="text-[#C8A97E] text-2xl font-display font-bold">A+</div>
-          <div className="text-white/50 text-xs mt-1">Creative Excellence</div>
-          <div className="mt-3 flex gap-1">
-            {[1,2,3,4,5].map(s => <div key={s} className="w-4 h-1 rounded-full bg-[#C8A97E]" />)}
-          </div>
-        </div>
-      </motion.div>
 
       <motion.div
         animate={{ x: mousePos.x * 0.3, y: mousePos.y * 0.3 }}

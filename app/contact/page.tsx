@@ -80,16 +80,7 @@ export default function ContactPage() {
                 Based in the vibrant city of Vadodara, we serve clients globally. While we don't have a contact form, our digital doors are always open via phone, email, and social media.
               </p>
               
-              <div className="space-y-6">
-                <h4 className="text-white font-semibold text-lg uppercase tracking-wider">Connect Digitally</h4>
-                <div className="flex gap-4">
-                  {Object.entries(SITE_CONFIG.social).map(([platform, url]) => (
-                    <a key={platform} href={url} target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-full glass border border-white/10 flex items-center justify-center hover:border-[#C8A97E] hover:text-[#C8A97E] hover:scale-110 transition-all duration-300 shadow-lg">
-                      <span className="capitalize font-semibold text-xs tracking-wider">{platform[0]}</span>
-                    </a>
-                  ))}
-                </div>
-              </div>
+
             </AnimatedSection>
 
             <AnimatedSection direction="right" className="h-full">
