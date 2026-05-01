@@ -18,10 +18,10 @@ const perks = [
 ];
 
 const openPositions = [
-  { title: 'Senior Brand Strategist', dept: 'Branding', type: 'Full-time', location: 'Ahmedabad' },
-  { title: 'UI/UX Designer', dept: 'Digital', type: 'Full-time', location: 'Ahmedabad / Remote' },
-  { title: 'Event Coordinator', dept: 'Events', type: 'Full-time', location: 'Ahmedabad' },
-  { title: 'Interior Architect', dept: 'Architecture', type: 'Full-time', location: 'Ahmedabad' },
+  { title: 'Senior Brand Strategist', dept: 'Branding', type: 'Full-time', location: 'Vadodara' },
+  { title: 'UI/UX Designer', dept: 'Digital', type: 'Full-time', location: 'Vadodara / Remote' },
+  { title: 'Event Coordinator', dept: 'Events', type: 'Full-time', location: 'Vadodara' },
+  { title: 'Interior Architect', dept: 'Architecture', type: 'Full-time', location: 'Vadodara' },
 ];
 
 export default function CareersPage() {

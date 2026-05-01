@@ -2,7 +2,7 @@
 
 > **"Where Creativity Meets Innovation"**
 
-Welcome to the official repository for **Vision And Design**, an ultra-premium, full-service creative agency based in Ahmedabad, Gujarat. We specialize in transforming brands through world-class design, cinematic event management, architectural excellence, and fashion choreography.
+Welcome to the official repository for **Vision And Design**, an ultra-premium, full-service creative agency based in Vadodara, Gujarat. We specialize in transforming brands through world-class design, cinematic event management, architectural excellence, and fashion choreography.
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=next.js)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-06B6D4?style=flat&logo=tailwindcss)

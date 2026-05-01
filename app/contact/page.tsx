@@ -14,7 +14,7 @@ const contacts = [
   { icon: Phone, title: 'Call Us', details: [SITE_CONFIG.contact1.phone, SITE_CONFIG.contact2.phone], action: `tel:${SITE_CONFIG.contact1.phone}`, cta: 'Call Now' },
   { icon: MessageCircle, title: 'WhatsApp', details: ['Quick responses', 'Direct messaging'], action: `https://wa.me/${SITE_CONFIG.whatsapp}`, cta: 'Chat on WhatsApp' },
   { icon: Mail, title: 'Email', details: [SITE_CONFIG.email, '24/7 Support'], action: `mailto:${SITE_CONFIG.email}`, cta: 'Send Email' },
-  { icon: MapPin, title: 'Visit Us', details: ['Ahmedabad', 'Gujarat, India'], action: '#', cta: 'Get Directions' },
+  { icon: MapPin, title: 'Visit Us', details: ['Vadodara', 'Gujarat, India'], action: '#', cta: 'Get Directions' },
 ];
 
 export default function ContactPage() {
@@ -77,7 +77,7 @@ export default function ContactPage() {
             <AnimatedSection direction="left">
               <SectionHeader eyebrow="Location" title="Our" titleHighlight="Headquarters" align="left" />
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Based in the vibrant city of Ahmedabad, we serve clients globally. While we don't have a contact form, our digital doors are always open via phone, email, and social media.
+                Based in the vibrant city of Vadodara, we serve clients globally. While we don't have a contact form, our digital doors are always open via phone, email, and social media.
               </p>
               
               <div className="space-y-6">
