@@ -91,7 +91,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#16161a]">
+    <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FDFBF7]">
       {/* Particle canvas */}
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none z-[1]" />
 
@@ -135,9 +135,9 @@ export default function HeroSection() {
             transition={{ duration: 1.1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="text-[clamp(3rem,10vw,9rem)] font-display font-black leading-[0.88] tracking-tight"
           >
-            <span className="block text-white">Where</span>
+            <span className="block text-[#1A1A1A]">Where</span>
             <span className="block text-gradient-hero text-glow-gold">Creativity</span>
-            <span className="block text-white">Meets</span>
+            <span className="block text-[#1A1A1A]">Meets</span>
 
             {/* Animated word */}
             <span className="block relative h-[1.1em] overflow-hidden">
@@ -162,7 +162,7 @@ export default function HeroSection() {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.9, delay: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="text-white/50 text-lg sm:text-xl max-w-xl mx-auto leading-relaxed mb-12 tracking-wide"
+          className="text-black/50 text-lg sm:text-xl max-w-xl mx-auto leading-relaxed mb-12 tracking-wide"
         >
           Vision And Design — crafting extraordinary brand experiences through design, strategy, and boundless innovation.
         </motion.p>
@@ -206,7 +206,7 @@ export default function HeroSection() {
               >
                 {stat.value}
               </motion.div>
-              <div className="text-white/30 text-[10px] tracking-[0.2em] uppercase">{stat.label}</div>
+              <div className="text-black/30 text-[10px] tracking-[0.2em] uppercase">{stat.label}</div>
             </div>
           ))}
         </motion.div>
@@ -218,10 +218,10 @@ export default function HeroSection() {
         transition={{ type: 'spring', stiffness: 50, damping: 20 }}
         className="absolute bottom-1/3 left-[6%] z-10 hidden xl:block pointer-events-none"
       >
-        <div className="glass-dark rounded-2xl p-5 w-40 animate-floating" style={{ animationDelay: '3s' }}>
+        <div className="glass rounded-2xl p-5 w-40 animate-floating" style={{ animationDelay: '3s' }}>
           <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#C8A97E] to-[#A07840] mb-3" />
-          <div className="text-white text-sm font-semibold">Vision & Design</div>
-          <div className="text-white/40 text-xs">Est. 2019</div>
+          <div className="text-[#1A1A1A] text-sm font-semibold">Vision & Design</div>
+          <div className="text-black/40 text-xs">Est. 2019</div>
         </div>
       </motion.div>
 
@@ -232,7 +232,7 @@ export default function HeroSection() {
         transition={{ delay: 2 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10"
       >
-        <span className="text-white/20 text-[10px] tracking-[0.4em] uppercase">Scroll</span>
+        <span className="text-black/20 text-[10px] tracking-[0.4em] uppercase">Scroll</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}

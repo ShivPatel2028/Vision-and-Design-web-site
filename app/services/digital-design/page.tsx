@@ -27,7 +27,7 @@ const faqs = [
 
 export default function DigitalDesignPage() {
   return (
-    <div className="bg-[#16161a] pt-20">
+    <div className="bg-[#FDFBF7] pt-20">
       {/* Cinematic Hero */}
       <section className="relative min-h-[85vh] flex items-end pb-24 overflow-hidden">
         <div className="absolute inset-0">
@@ -38,7 +38,7 @@ export default function DigitalDesignPage() {
         {/* Floating UI mockup element */}
         <div className="absolute top-1/4 right-[5%] hidden lg:block z-10">
           <AnimatedSection direction="right">
-            <div className="glass-dark rounded-2xl p-4 w-64 border border-[#6366F1]/30 animate-floating">
+            <div className="glass rounded-2xl p-4 w-64 border border-[#6366F1]/30 animate-floating">
               <div className="flex items-center gap-2 mb-3">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
@@ -55,15 +55,15 @@ export default function DigitalDesignPage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-2xl">
-            <Link href="/services" className="text-white/30 text-xs hover:text-[#C8A97E] transition-colors duration-200 mb-8 inline-block">← All Services</Link>
+            <Link href="/services" className="text-black/30 text-xs hover:text-[#C8A97E] transition-colors duration-200 mb-8 inline-block">← All Services</Link>
             <div className="inline-flex items-center gap-2 px-4 py-1.5 glass-gold rounded-full mb-6">
               <Monitor className="w-3.5 h-3.5 text-[#6366F1]" />
               <span className="text-[#C8A97E] text-xs font-semibold tracking-widest uppercase">Digital Design</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-display font-black text-white leading-[0.9] mb-6">
+            <h1 className="text-5xl md:text-7xl font-display font-black text-[#1A1A1A] leading-[0.9] mb-6">
               Designs That <br /><span className="text-gradient-gold">Captivate</span> <br />& Convert
             </h1>
-            <p className="text-white/60 text-lg leading-relaxed mb-8 max-w-lg">
+            <p className="text-black/60 text-lg leading-relaxed mb-8 max-w-lg">
               We create immersive digital experiences that not only look stunning but drive real business results through thoughtful UX and strategic design.
             </p>
             <a href={`tel:${SITE_CONFIG.contact1.phone}`} className="btn-gold px-8 py-4 rounded-full text-sm inline-flex items-center gap-2">
@@ -80,7 +80,7 @@ export default function DigitalDesignPage() {
           <div className="grid md:grid-cols-2 gap-6">
             {offerings.map((item, i) => (
               <AnimatedSection key={item.title} delay={i * 0.1}>
-                <div className="group glass-dark rounded-2xl overflow-hidden border border-white/5 hover:border-white/15 card-hover flex flex-col sm:flex-row">
+                <div className="group glass rounded-2xl overflow-hidden border border-black/5 hover:border-white/15 card-hover flex flex-col sm:flex-row">
                   <div className="img-zoom w-full sm:w-48 aspect-video sm:aspect-auto relative shrink-0">
                     <Image src={item.img} alt={item.title} fill className="object-cover" sizes="(max-width: 640px) 100vw, 200px" />
                     <div className="absolute inset-0" style={{ background: `linear-gradient(135deg, ${item.color}30, transparent)` }} />
@@ -89,8 +89,8 @@ export default function DigitalDesignPage() {
                     <div className="w-9 h-9 rounded-lg flex items-center justify-center mb-3" style={{ background: `${item.color}20`, border: `1px solid ${item.color}30` }}>
                       <item.icon className="w-4 h-4" style={{ color: item.color }} />
                     </div>
-                    <h3 className="text-white font-display font-bold text-lg mb-2 group-hover:text-[#C8A97E] transition-colors duration-300">{item.title}</h3>
-                    <p className="text-white/50 text-sm leading-relaxed">{item.desc}</p>
+                    <h3 className="text-[#1A1A1A] font-display font-bold text-lg mb-2 group-hover:text-[#C8A97E] transition-colors duration-300">{item.title}</h3>
+                    <p className="text-black/50 text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -100,7 +100,7 @@ export default function DigitalDesignPage() {
       </section>
 
       {/* Bento showcase */}
-      <section className="section-padding bg-[#1a1a1f]">
+      <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader eyebrow="Our Work" title="Design" titleHighlight="Showcase" />
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[200px]">
@@ -126,9 +126,9 @@ export default function DigitalDesignPage() {
           <div className="space-y-4">
             {faqs.map((faq, i) => (
               <AnimatedSection key={i} delay={i * 0.08}>
-                <div className="glass-dark rounded-2xl p-6 border border-white/5 hover:border-[#6366F1]/20 transition-colors duration-300">
-                  <h3 className="text-white font-semibold mb-2">{faq.q}</h3>
-                  <p className="text-white/50 text-sm leading-relaxed">{faq.a}</p>
+                <div className="glass rounded-2xl p-6 border border-black/5 hover:border-[#6366F1]/20 transition-colors duration-300">
+                  <h3 className="text-[#1A1A1A] font-semibold mb-2">{faq.q}</h3>
+                  <p className="text-black/50 text-sm leading-relaxed">{faq.a}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -137,11 +137,11 @@ export default function DigitalDesignPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#1a1a1f]">
+      <section className="py-24 bg-white">
         <div className="max-w-3xl mx-auto text-center px-4">
           <AnimatedSection>
-            <h2 className="text-4xl font-display font-bold text-white mb-4">Ready for <span className="text-gradient-gold">World-Class Design?</span></h2>
-            <p className="text-white/50 mb-8">Let's talk about your digital project. We're one call away.</p>
+            <h2 className="text-4xl font-display font-bold text-[#1A1A1A] mb-4">Ready for <span className="text-gradient-gold">World-Class Design?</span></h2>
+            <p className="text-black/50 mb-8">Let's talk about your digital project. We're one call away.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={`tel:${SITE_CONFIG.contact1.phone}`} className="btn-gold px-8 py-4 rounded-full text-sm inline-flex items-center justify-center gap-2">
                 <Phone className="w-4 h-4" /> Call Dhwani: {SITE_CONFIG.contact1.phone}

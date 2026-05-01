@@ -29,9 +29,9 @@ export default function AboutPreview() {
                 />
               </div>
               {/* Floating accent card */}
-              <div className="absolute -bottom-8 -right-8 glass-dark rounded-2xl p-6 shadow-2xl border border-[#C8A97E]/20 max-w-[220px]">
+              <div className="absolute -bottom-8 -right-8 glass rounded-2xl p-6 shadow-2xl border border-[#C8A97E]/20 max-w-[220px]">
                 <div className="text-4xl font-display font-bold text-gradient-gold mb-1">5+</div>
-                <div className="text-white/60 text-sm">Years of crafting<br />extraordinary experiences</div>
+                <div className="text-black/60 text-sm">Years of crafting<br />extraordinary experiences</div>
               </div>
               {/* Gold line accent */}
               <div className="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-[#C8A97E] rounded-tl-2xl" />
@@ -45,13 +45,13 @@ export default function AboutPreview() {
                 <span className="w-8 h-px bg-[#C8A97E]" />
                 About Us
               </span>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-white leading-tight">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-[#1A1A1A] leading-tight">
                 We Are A <span className="text-gradient-gold">Forward-Thinking</span> Creative Agency
               </h2>
-              <p className="text-white/60 leading-relaxed">
+              <p className="text-black/60 leading-relaxed">
                 Vision And Design is a passionate creative agency dedicated to crafting innovative solutions that elevate brands and experiences. Founded with the belief that great design has the power to transform businesses, we combine strategy, creativity, and execution to deliver outstanding results.
               </p>
-              <p className="text-white/60 leading-relaxed">
+              <p className="text-black/60 leading-relaxed">
                 From branding and digital design to event management and interior spaces, our multidisciplinary team brings a holistic approach to every project we undertake.
               </p>
 
@@ -60,7 +60,7 @@ export default function AboutPreview() {
                 {highlights.map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#C8A97E] shrink-0" />
-                    <span className="text-white/70 text-sm">{item}</span>
+                    <span className="text-black/70 text-sm">{item}</span>
                   </li>
                 ))}
               </ul>

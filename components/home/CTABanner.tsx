@@ -5,7 +5,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 
 export default function CTABanner() {
   return (
-    <section className="py-24 relative overflow-hidden bg-[#1a1a1f]">
+    <section className="py-24 relative overflow-hidden bg-white">
       <div className="absolute inset-0 bg-gradient-to-br from-[#C8A97E]/10 via-[#1A1A2E]/50 to-[#1a1a1f]" />
       
       {/* Decorative Orbs */}
@@ -14,7 +14,7 @@ export default function CTABanner() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
-          <div className="glass-dark rounded-3xl p-10 md:p-16 border border-[#C8A97E]/20 text-center relative overflow-hidden group shadow-[0_0_50px_rgba(200,169,126,0.05)]">
+          <div className="glass rounded-3xl p-10 md:p-16 border border-[#C8A97E]/20 text-center relative overflow-hidden group shadow-[0_0_50px_rgba(200,169,126,0.05)]">
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1600&q=80')] opacity-[0.03] mix-blend-overlay group-hover:opacity-[0.06] transition-opacity duration-700" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1a1a1f]/80" />
 
@@ -23,12 +23,12 @@ export default function CTABanner() {
                 <span className="w-8 h-px bg-[#C8A97E]" /> Start Your Journey <span className="w-8 h-px bg-[#C8A97E]" />
               </span>
               
-              <h2 className="text-4xl md:text-6xl font-display font-black text-white mb-6 leading-tight">
+              <h2 className="text-4xl md:text-6xl font-display font-black text-[#1A1A1A] mb-6 leading-tight">
                 Ready to Create <br />
                 <span className="text-gradient-gold">Something Extraordinary?</span>
               </h2>
               
-              <p className="text-white/60 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+              <p className="text-black/60 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
                 Connect with our founders directly. Let's discuss your vision and craft a strategy that sets you apart.
               </p>
               

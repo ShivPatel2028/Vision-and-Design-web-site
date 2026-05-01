@@ -11,7 +11,7 @@ function StatCard({ value, suffix, label, delay }: { value: number; suffix: stri
         <div className="text-5xl md:text-6xl font-display font-bold text-gradient-gold mb-2">
           {count}{suffix}
         </div>
-        <div className="text-white/50 text-sm tracking-wider uppercase">{label}</div>
+        <div className="text-black/50 text-sm tracking-wider uppercase">{label}</div>
       </AnimatedSection>
     </div>
   );

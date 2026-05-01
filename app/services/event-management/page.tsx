@@ -26,7 +26,7 @@ const eventTypes = [
 
 export default function EventManagementPage() {
   return (
-    <div className="bg-[#16161a] pt-20">
+    <div className="bg-[#FDFBF7] pt-20">
       {/* Cinematic Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
@@ -36,15 +36,15 @@ export default function EventManagementPage() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-2xl">
-            <Link href="/services" className="text-white/30 text-xs hover:text-[#C8A97E] transition-colors duration-200 mb-8 inline-block">← All Services</Link>
+            <Link href="/services" className="text-black/30 text-xs hover:text-[#C8A97E] transition-colors duration-200 mb-8 inline-block">← All Services</Link>
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EC4899]/10 border border-[#EC4899]/20 mb-6">
               <Calendar className="w-3.5 h-3.5 text-[#EC4899]" />
               <span className="text-[#C8A97E] text-xs font-semibold tracking-widest uppercase">Event Management</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-display font-black text-white leading-[0.9] mb-6">
+            <h1 className="text-5xl md:text-7xl font-display font-black text-[#1A1A1A] leading-[0.9] mb-6">
               Events That<br /><span className="text-gradient-gold">Create</span><br />Memories
             </h1>
-            <p className="text-white/60 text-lg leading-relaxed mb-8 max-w-md">
+            <p className="text-black/60 text-lg leading-relaxed mb-8 max-w-md">
               We orchestrate extraordinary events with flawless execution and an unrelenting passion for perfection.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -70,8 +70,8 @@ export default function EventManagementPage() {
                   <Image src={ev.img} alt={ev.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-8">
-                    <h3 className="text-white font-display font-bold text-2xl mb-2">{ev.title}</h3>
-                    <p className="text-white/60 text-sm">{ev.desc}</p>
+                    <h3 className="text-[#1A1A1A] font-display font-bold text-2xl mb-2">{ev.title}</h3>
+                    <p className="text-black/60 text-sm">{ev.desc}</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -81,24 +81,24 @@ export default function EventManagementPage() {
       </section>
 
       {/* Packages */}
-      <section className="section-padding bg-[#1a1a1f]">
+      <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader eyebrow="Pricing" title="Event" titleHighlight="Packages" />
           <div className="grid md:grid-cols-3 gap-6">
             {packages.map((pkg, i) => (
               <AnimatedSection key={pkg.name} delay={i * 0.12}>
-                <div className={`relative glass-dark rounded-2xl p-8 border card-hover h-full ${pkg.featured ? 'border-[#C8A97E]/40 glow-gold-sm' : 'border-white/5'}`}>
+                <div className={`relative glass rounded-2xl p-8 border card-hover h-full ${pkg.featured ? 'border-[#C8A97E]/40 glow-gold-sm' : 'border-black/5'}`}>
                   {pkg.featured && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#C8A97E] to-[#E8D5B7] text-black text-[10px] font-bold tracking-widest uppercase px-4 py-1 rounded-full">
                       Most Popular
                     </div>
                   )}
-                  <pkg.icon className={`w-8 h-8 mb-4 ${pkg.featured ? 'text-[#C8A97E]' : 'text-white/40'}`} />
-                  <h3 className="text-white font-display font-bold text-2xl mb-2">{pkg.name}</h3>
-                  <p className="text-white/50 text-sm mb-6">{pkg.desc}</p>
+                  <pkg.icon className={`w-8 h-8 mb-4 ${pkg.featured ? 'text-[#C8A97E]' : 'text-black/40'}`} />
+                  <h3 className="text-[#1A1A1A] font-display font-bold text-2xl mb-2">{pkg.name}</h3>
+                  <p className="text-black/50 text-sm mb-6">{pkg.desc}</p>
                   <ul className="space-y-2 mb-8">
                     {pkg.features.map(f => (
-                      <li key={f} className="flex items-center gap-2 text-sm text-white/60">
+                      <li key={f} className="flex items-center gap-2 text-sm text-black/60">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#C8A97E]" />{f}
                       </li>
                     ))}
@@ -117,8 +117,8 @@ export default function EventManagementPage() {
       <section className="py-24">
         <div className="max-w-3xl mx-auto text-center px-4">
           <AnimatedSection>
-            <h2 className="text-4xl font-display font-bold text-white mb-4">Let's Plan Your <span className="text-gradient-gold">Perfect Event</span></h2>
-            <p className="text-white/50 mb-8">Reach out directly. We're ready to make it extraordinary.</p>
+            <h2 className="text-4xl font-display font-bold text-[#1A1A1A] mb-4">Let's Plan Your <span className="text-gradient-gold">Perfect Event</span></h2>
+            <p className="text-black/50 mb-8">Reach out directly. We're ready to make it extraordinary.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={`tel:${SITE_CONFIG.contact1.phone}`} className="btn-gold px-8 py-4 rounded-full text-sm inline-flex items-center justify-center gap-2">
                 <Phone className="w-4 h-4" /> {SITE_CONFIG.contact1.phone}

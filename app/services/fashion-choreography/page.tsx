@@ -20,7 +20,7 @@ const services = [
 
 export default function FashionChoreographyPage() {
   return (
-    <div className="bg-[#16161a] pt-20">
+    <div className="bg-[#FDFBF7] pt-20">
       {/* Cinematic editorial hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
@@ -31,23 +31,23 @@ export default function FashionChoreographyPage() {
         {/* Editorial floating tag */}
         <div className="absolute top-[20%] right-[10%] hidden lg:block z-10">
           <AnimatedSection direction="right">
-            <div className="glass-dark border border-[#F59E0B]/20 rounded-xl p-4 animate-floating">
+            <div className="glass border border-[#F59E0B]/20 rounded-xl p-4 animate-floating">
               <div className="text-[10px] tracking-[0.3em] text-[#F59E0B] uppercase mb-1">Fashion Week</div>
-              <div className="text-white font-display font-bold text-lg">Runway Ready</div>
+              <div className="text-[#1A1A1A] font-display font-bold text-lg">Runway Ready</div>
               <div className="w-full h-px bg-gradient-to-r from-[#F59E0B] to-transparent mt-2" />
             </div>
           </AnimatedSection>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-2xl">
-            <Link href="/services" className="text-white/30 text-xs hover:text-[#C8A97E] transition-colors duration-200 mb-8 inline-block">← All Services</Link>
+            <Link href="/services" className="text-black/30 text-xs hover:text-[#C8A97E] transition-colors duration-200 mb-8 inline-block">← All Services</Link>
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F59E0B]/10 border border-[#F59E0B]/20 mb-6">
               <span className="text-[#F59E0B] text-xs font-semibold tracking-widest uppercase">Fashion Choreography</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-display font-black text-white leading-[0.9] mb-6">
+            <h1 className="text-5xl md:text-7xl font-display font-black text-[#1A1A1A] leading-[0.9] mb-6">
               Runway<br /><span className="text-gradient-gold">Perfection</span><br />Defined
             </h1>
-            <p className="text-white/60 text-lg leading-relaxed mb-8 max-w-md">
+            <p className="text-black/60 text-lg leading-relaxed mb-8 max-w-md">
               We bring fashion shows to life with expert choreography, precision model management, and a directorial eye that transforms every runway into art.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -69,14 +69,14 @@ export default function FashionChoreographyPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((s, i) => (
               <AnimatedSection key={s.title} delay={i * 0.1}>
-                <div className="group glass-dark rounded-2xl overflow-hidden border border-white/5 hover:border-[#F59E0B]/20 card-hover h-full">
+                <div className="group glass rounded-2xl overflow-hidden border border-black/5 hover:border-[#F59E0B]/20 card-hover h-full">
                   <div className="img-zoom aspect-video relative">
                     <Image src={s.img} alt={s.title} fill className="object-cover" sizes="25vw" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                   </div>
                   <div className="p-5">
-                    <h3 className="text-white font-display font-bold text-lg mb-2 group-hover:text-[#C8A97E] transition-colors duration-300">{s.title}</h3>
-                    <p className="text-white/50 text-sm leading-relaxed">{s.desc}</p>
+                    <h3 className="text-[#1A1A1A] font-display font-bold text-lg mb-2 group-hover:text-[#C8A97E] transition-colors duration-300">{s.title}</h3>
+                    <p className="text-black/50 text-sm leading-relaxed">{s.desc}</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -86,7 +86,7 @@ export default function FashionChoreographyPage() {
       </section>
 
       {/* Editorial split layout */}
-      <section className="section-padding bg-[#1a1a1f]">
+      <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection direction="left">
@@ -103,18 +103,18 @@ export default function FashionChoreographyPage() {
             </AnimatedSection>
             <AnimatedSection direction="right">
               <span className="text-[#F59E0B] text-xs tracking-[0.25em] uppercase font-semibold block mb-4">Our Expertise</span>
-              <h2 className="text-4xl font-display font-bold text-white mb-6">The Art of <span className="text-gradient-gold">Perfect Choreography</span></h2>
-              <p className="text-white/60 leading-relaxed mb-4">
+              <h2 className="text-4xl font-display font-bold text-[#1A1A1A] mb-6">The Art of <span className="text-gradient-gold">Perfect Choreography</span></h2>
+              <p className="text-black/60 leading-relaxed mb-4">
                 Our fashion choreography team brings years of runway experience and an editorial eye to every show we direct. We understand the rhythm of fashion — how garments move, how models walk, and how the entire show comes together as a cohesive visual narrative.
               </p>
-              <p className="text-white/60 leading-relaxed mb-8">
+              <p className="text-black/60 leading-relaxed mb-8">
                 From intimate brand shows to large-scale fashion weeks, we handle every technical and creative detail so that every moment on the runway is flawlessly executed.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {[['50+', 'Shows Choreographed'], ['200+', 'Models Coordinated'], ['15+', 'Fashion Brands'], ['100%', 'On-Time Delivery']].map(([val, lbl]) => (
-                  <div key={lbl} className="glass-dark rounded-xl p-4 border border-white/5">
+                  <div key={lbl} className="glass rounded-xl p-4 border border-black/5">
                     <div className="text-2xl font-display font-bold text-gradient-gold">{val}</div>
-                    <div className="text-white/40 text-xs mt-1">{lbl}</div>
+                    <div className="text-black/40 text-xs mt-1">{lbl}</div>
                   </div>
                 ))}
               </div>
@@ -127,8 +127,8 @@ export default function FashionChoreographyPage() {
       <section className="py-24">
         <div className="max-w-3xl mx-auto text-center px-4">
           <AnimatedSection>
-            <h2 className="text-4xl font-display font-bold text-white mb-4">Ready for Your <span className="text-gradient-gold">Fashion Moment?</span></h2>
-            <p className="text-white/50 mb-8">Connect with us to discuss your fashion show or event choreography.</p>
+            <h2 className="text-4xl font-display font-bold text-[#1A1A1A] mb-4">Ready for Your <span className="text-gradient-gold">Fashion Moment?</span></h2>
+            <p className="text-black/50 mb-8">Connect with us to discuss your fashion show or event choreography.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={`tel:${SITE_CONFIG.contact1.phone}`} className="btn-gold px-8 py-4 rounded-full text-sm inline-flex items-center justify-center gap-2">
                 <Phone className="w-4 h-4" /> Call Dhwani

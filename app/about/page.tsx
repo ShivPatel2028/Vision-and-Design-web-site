@@ -35,7 +35,7 @@ const values = [
 
 export default function AboutPage() {
   return (
-    <div className="bg-[#1e1e24] pt-20">
+    <div className="bg-[#F2F0ED] pt-20">
       {/* Hero */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#1e1e24] to-[#1e1e24]" />
@@ -46,10 +46,10 @@ export default function AboutPage() {
               <span className="w-8 h-px bg-[#C8A97E]" />
               About Us
             </span>
-            <h1 className="text-5xl md:text-7xl font-display font-bold text-white leading-tight mb-6">
+            <h1 className="text-5xl md:text-7xl font-display font-bold text-[#1A1A1A] leading-tight mb-6">
               We Are <span className="text-gradient-gold">Vision</span> And Design
             </h1>
-            <p className="text-white/60 text-xl leading-relaxed">
+            <p className="text-black/60 text-xl leading-relaxed">
               A forward-thinking creative agency passionate about crafting innovative solutions that elevate brands and create extraordinary experiences across every medium.
             </p>
           </AnimatedSection>
@@ -71,9 +71,9 @@ export default function AboutPage() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-6 -right-6 glass-dark rounded-2xl p-5 border border-[#C8A97E]/20">
+                <div className="absolute -bottom-6 -right-6 glass rounded-2xl p-5 border border-[#C8A97E]/20">
                   <div className="text-3xl font-display font-bold text-gradient-gold">150+</div>
-                  <div className="text-white/50 text-sm">Successful Projects</div>
+                  <div className="text-black/50 text-sm">Successful Projects</div>
                 </div>
               </div>
             </AnimatedSection>
@@ -81,16 +81,16 @@ export default function AboutPage() {
             <AnimatedSection direction="right">
               <div className="space-y-6">
                 <span className="text-[#C8A97E] text-xs tracking-[0.25em] uppercase font-semibold">Our Story</span>
-                <h2 className="text-4xl font-display font-bold text-white leading-tight">
+                <h2 className="text-4xl font-display font-bold text-[#1A1A1A] leading-tight">
                   Born from a Passion for <span className="text-gradient-gold">Creative Excellence</span>
                 </h2>
-                <p className="text-white/60 leading-relaxed">
+                <p className="text-black/60 leading-relaxed">
                   Vision And Design was born from a simple yet powerful belief: that great design has the power to transform businesses, inspire people, and create lasting impact. Founded by Dhwani Pandya and Vraj Pandya, we set out to build a creative agency that truly understands the intersection of aesthetics, strategy, and execution.
                 </p>
-                <p className="text-white/60 leading-relaxed">
+                <p className="text-black/60 leading-relaxed">
                   What started as a branding and digital design studio has grown into a fully integrated creative agency serving clients across six specialized verticals — from crafting compelling brand identities to choreographing breathtaking fashion shows and designing stunning interior spaces.
                 </p>
-                <p className="text-white/60 leading-relaxed">
+                <p className="text-black/60 leading-relaxed">
                   Today, with over 150 successful projects and 50+ satisfied clients, Vision And Design stands as a testament to what's possible when creativity meets innovation.
                 </p>
                 <Link href="/contact" className="btn-gold inline-flex items-center gap-2 px-8 py-4 rounded-full text-sm group">
@@ -114,12 +114,12 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {values.map((v, i) => (
               <AnimatedSection key={v.title} delay={i * 0.1}>
-                <div className="glass-dark rounded-2xl p-8 border border-white/5 hover:border-[#C8A97E]/20 card-hover group h-full">
+                <div className="glass rounded-2xl p-8 border border-black/5 hover:border-[#C8A97E]/20 card-hover group h-full">
                   <div className="w-14 h-14 rounded-xl bg-[#C8A97E]/10 border border-[#C8A97E]/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <v.icon className="w-6 h-6 text-[#C8A97E]" />
                   </div>
-                  <h3 className="text-white font-display font-bold text-2xl mb-4 group-hover:text-[#C8A97E] transition-colors duration-300">{v.title}</h3>
-                  <p className="text-white/50 leading-relaxed">{v.description}</p>
+                  <h3 className="text-[#1A1A1A] font-display font-bold text-2xl mb-4 group-hover:text-[#C8A97E] transition-colors duration-300">{v.title}</h3>
+                  <p className="text-black/50 leading-relaxed">{v.description}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -146,14 +146,14 @@ export default function AboutPage() {
                 <AnimatedSection key={item.year} delay={i * 0.08} direction={i % 2 === 0 ? 'left' : 'right'}>
                   <div className={`relative flex items-start gap-8 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                     {/* Year bubble */}
-                    <div className="relative z-10 shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#1e1e24] border-2 border-[#C8A97E] flex items-center justify-center md:absolute md:left-1/2 md:-translate-x-1/2">
+                    <div className="relative z-10 shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#F2F0ED] border-2 border-[#C8A97E] flex items-center justify-center md:absolute md:left-1/2 md:-translate-x-1/2">
                       <span className="text-[#C8A97E] font-bold text-xs md:text-sm">{item.year}</span>
                     </div>
                     {/* Card */}
-                    <div className={`glass-dark rounded-2xl p-6 border border-white/5 hover:border-[#C8A97E]/20 transition-colors duration-300 md:w-[calc(50%-3rem)] ${i % 2 === 0 ? 'md:ml-auto md:mr-0' : 'md:mr-auto md:ml-0'}`}>
+                    <div className={`glass rounded-2xl p-6 border border-black/5 hover:border-[#C8A97E]/20 transition-colors duration-300 md:w-[calc(50%-3rem)] ${i % 2 === 0 ? 'md:ml-auto md:mr-0' : 'md:mr-auto md:ml-0'}`}>
                       <div className="text-[#C8A97E] text-xs font-semibold tracking-widest uppercase mb-2">{item.year}</div>
-                      <h3 className="text-white font-display font-bold text-xl mb-2">{item.title}</h3>
-                      <p className="text-white/50 text-sm leading-relaxed">{item.description}</p>
+                      <h3 className="text-[#1A1A1A] font-display font-bold text-xl mb-2">{item.title}</h3>
+                      <p className="text-black/50 text-sm leading-relaxed">{item.description}</p>
                     </div>
                   </div>
                 </AnimatedSection>
@@ -175,7 +175,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {TEAM_MEMBERS.map((member, i) => (
               <AnimatedSection key={member.id} delay={i * 0.15}>
-                <div className="group glass-dark rounded-2xl overflow-hidden border border-white/5 hover:border-[#C8A97E]/20 card-hover">
+                <div className="group glass rounded-2xl overflow-hidden border border-black/5 hover:border-[#C8A97E]/20 card-hover">
                   <div className="img-zoom aspect-[3/4] relative">
                     <Image
                       src={member.image}
@@ -187,21 +187,21 @@ export default function AboutPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
                     <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-3 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
                       {member.social.instagram && (
-                        <a href={member.social.instagram} className="w-10 h-10 glass rounded-full flex items-center justify-center text-white hover:text-[#C8A97E] transition-colors duration-200 text-xs font-bold">
+                        <a href={member.social.instagram} className="w-10 h-10 glass rounded-full flex items-center justify-center text-[#1A1A1A] hover:text-[#C8A97E] transition-colors duration-200 text-xs font-bold">
                           IG
                         </a>
                       )}
                       {member.social.linkedin && (
-                        <a href={member.social.linkedin} className="w-10 h-10 glass rounded-full flex items-center justify-center text-white hover:text-[#C8A97E] transition-colors duration-200 text-xs font-bold">
+                        <a href={member.social.linkedin} className="w-10 h-10 glass rounded-full flex items-center justify-center text-[#1A1A1A] hover:text-[#C8A97E] transition-colors duration-200 text-xs font-bold">
                           IN
                         </a>
                       )}
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-white font-display font-bold text-xl mb-1">{member.name}</h3>
+                    <h3 className="text-[#1A1A1A] font-display font-bold text-xl mb-1">{member.name}</h3>
                     <div className="text-[#C8A97E] text-sm mb-3">{member.role}</div>
-                    <p className="text-white/50 text-sm leading-relaxed">{member.bio}</p>
+                    <p className="text-black/50 text-sm leading-relaxed">{member.bio}</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -215,10 +215,10 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#C8A97E]/10 via-[#1A1A2E] to-[#1e1e24]" />
         <div className="relative z-10 max-w-3xl mx-auto text-center px-4">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-[#1A1A1A] mb-6">
               Ready to Create <span className="text-gradient-gold">Together?</span>
             </h2>
-            <p className="text-white/60 text-lg mb-8">Let's collaborate and build something extraordinary. Your vision is our canvas.</p>
+            <p className="text-black/60 text-lg mb-8">Let's collaborate and build something extraordinary. Your vision is our canvas.</p>
             <Link href="/contact" className="btn-gold px-10 py-4 rounded-full text-base inline-flex items-center gap-2 group">
               Get In Touch
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />

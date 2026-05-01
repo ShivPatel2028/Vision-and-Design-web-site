@@ -25,7 +25,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'glass-dark shadow-lg shadow-black/20'
+          ? 'glass shadow-lg shadow-black/5'
           : 'bg-transparent'
       }`}
     >
@@ -48,7 +48,7 @@ export default function Navbar() {
                       className={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 hover-underline ${
                         pathname.startsWith(item.href) && item.href !== '/'
                           ? 'text-[#C8A97E]'
-                          : 'text-white/80 hover:text-white'
+                          : 'text-black/80 hover:text-[#1A1A1A]'
                       }`}
                       onMouseEnter={() => setMegaMenuOpen(true)}
                       onMouseLeave={() => setMegaMenuOpen(false)}
@@ -63,7 +63,7 @@ export default function Navbar() {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: 8 }}
                           transition={{ duration: 0.2 }}
-                          className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 glass-dark rounded-2xl overflow-hidden shadow-2xl border border-[#C8A97E]/10"
+                          className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 glass rounded-2xl overflow-hidden shadow-2xl border border-[#C8A97E]/10"
                           onMouseEnter={() => setMegaMenuOpen(true)}
                           onMouseLeave={() => setMegaMenuOpen(false)}
                         >
@@ -73,7 +73,7 @@ export default function Navbar() {
                               <Link
                                 key={child.href}
                                 href={child.href}
-                                className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-white/80 hover:text-white hover:bg-white/5 transition-all duration-200 hover:translate-x-1"
+                                className="flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm text-black/80 hover:text-[#1A1A1A] hover:bg-white/5 transition-all duration-200 hover:translate-x-1"
                               >
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#C8A97E]" />
                                 {child.label}
@@ -90,7 +90,7 @@ export default function Navbar() {
                     className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 hover-underline ${
                       pathname === item.href
                         ? 'text-[#C8A97E]'
-                        : 'text-white/80 hover:text-white'
+                        : 'text-black/80 hover:text-[#1A1A1A]'
                     }`}
                   >
                     {item.label}
@@ -113,7 +113,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg glass text-white"
+            className="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg glass text-[#1A1A1A]"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -129,7 +129,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden glass-dark border-t border-[#C8A97E]/10 overflow-hidden"
+            className="lg:hidden glass border-t border-[#C8A97E]/10 overflow-hidden"
           >
             <div className="px-4 py-6 space-y-1">
               {NAV_ITEMS.map((item) => (
@@ -137,7 +137,7 @@ export default function Navbar() {
                   <Link
                     href={item.href}
                     className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors duration-200 ${
-                      pathname === item.href ? 'text-[#C8A97E] bg-[#C8A97E]/10' : 'text-white/80 hover:text-white hover:bg-white/5'
+                      pathname === item.href ? 'text-[#C8A97E] bg-[#C8A97E]/10' : 'text-black/80 hover:text-[#1A1A1A] hover:bg-white/5'
                     }`}
                   >
                     {item.label}
@@ -148,7 +148,7 @@ export default function Navbar() {
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block px-4 py-2 text-xs text-white/60 hover:text-[#C8A97E] transition-colors duration-200"
+                          className="block px-4 py-2 text-xs text-black/60 hover:text-[#C8A97E] transition-colors duration-200"
                         >
                           → {child.label}
                         </Link>

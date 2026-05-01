@@ -28,7 +28,7 @@ const faqs = [
 
 export default function BrandingIdentityPage() {
   return (
-    <div className="bg-[#1e1e24] pt-20">
+    <div className="bg-[#F2F0ED] pt-20">
       {/* Hero */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
@@ -41,10 +41,10 @@ export default function BrandingIdentityPage() {
               ← Back to Services
             </Link>
             <span className="text-[#C8A97E] text-xs font-semibold tracking-[0.25em] uppercase block mb-4">Branding & Identity</span>
-            <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-display font-bold text-[#1A1A1A] mb-6 leading-tight">
               Build a Brand That <span className="text-gradient-gold">Stands the Test of Time</span>
             </h1>
-            <p className="text-white/60 text-xl leading-relaxed mb-10">
+            <p className="text-black/60 text-xl leading-relaxed mb-10">
               We craft distinctive, strategic brand identities that resonate deeply with your audience and communicate your unique value in a crowded market.
             </p>
             <a href={`tel:${SITE_CONFIG.contact1.phone}`} className="btn-gold px-8 py-4 rounded-full text-base inline-flex items-center gap-2 group">
@@ -66,13 +66,13 @@ export default function BrandingIdentityPage() {
               { title: 'Brand Strategy', desc: 'Strategic brand positioning, messaging frameworks, and audience targeting to drive business growth.', img: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80' },
             ].map((item, i) => (
               <AnimatedSection key={item.title} delay={i * 0.1}>
-                <div className="group glass-dark rounded-2xl overflow-hidden border border-white/5 hover:border-[#C8A97E]/20 card-hover h-full">
+                <div className="group glass rounded-2xl overflow-hidden border border-black/5 hover:border-[#C8A97E]/20 card-hover h-full">
                   <div className="img-zoom aspect-video relative">
                     <Image src={item.img} alt={item.title} fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-white font-display font-bold text-lg mb-2 group-hover:text-[#C8A97E] transition-colors duration-300">{item.title}</h3>
-                    <p className="text-white/50 text-sm leading-relaxed">{item.desc}</p>
+                    <h3 className="text-[#1A1A1A] font-display font-bold text-lg mb-2 group-hover:text-[#C8A97E] transition-colors duration-300">{item.title}</h3>
+                    <p className="text-black/50 text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -87,13 +87,13 @@ export default function BrandingIdentityPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection direction="left">
               <span className="text-[#C8A97E] text-xs tracking-[0.25em] uppercase font-semibold block mb-4">Color Systems</span>
-              <h2 className="text-4xl font-display font-bold text-white mb-6">Color Palettes That <span className="text-gradient-gold">Speak Volumes</span></h2>
-              <p className="text-white/60 leading-relaxed mb-8">Every color in your brand palette is chosen with intention. We use color psychology and market research to build palettes that evoke exactly the right emotions in your audience.</p>
+              <h2 className="text-4xl font-display font-bold text-[#1A1A1A] mb-6">Color Palettes That <span className="text-gradient-gold">Speak Volumes</span></h2>
+              <p className="text-black/60 leading-relaxed mb-8">Every color in your brand palette is chosen with intention. We use color psychology and market research to build palettes that evoke exactly the right emotions in your audience.</p>
               <div className="flex gap-3">
                 {palette.map((color) => (
                   <div key={color} className="group flex flex-col items-center gap-2">
                     <div className="w-12 h-12 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300" style={{ background: color }} />
-                    <span className="text-white/30 text-[10px] font-mono">{color}</span>
+                    <span className="text-black/30 text-[10px] font-mono">{color}</span>
                   </div>
                 ))}
               </div>
@@ -117,7 +117,7 @@ export default function BrandingIdentityPage() {
               { client: 'Fashion Forward', result: '3× social engagement', img: 'https://images.unsplash.com/photo-1537832816519-689ad163238b?w=800&q=80', desc: 'New brand identity that captured the essence of modern luxury fashion and drove massive growth.' },
             ].map((cs, i) => (
               <AnimatedSection key={cs.client} delay={i * 0.1}>
-                <div className="group glass-dark rounded-2xl overflow-hidden border border-white/5 hover:border-[#C8A97E]/20 card-hover">
+                <div className="group glass rounded-2xl overflow-hidden border border-black/5 hover:border-[#C8A97E]/20 card-hover">
                   <div className="img-zoom aspect-video relative">
                     <Image src={cs.img} alt={cs.client} fill className="object-cover" sizes="50vw" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
@@ -126,8 +126,8 @@ export default function BrandingIdentityPage() {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-white font-display font-bold text-xl mb-2">{cs.client}</h3>
-                    <p className="text-white/50 text-sm leading-relaxed">{cs.desc}</p>
+                    <h3 className="text-[#1A1A1A] font-display font-bold text-xl mb-2">{cs.client}</h3>
+                    <p className="text-black/50 text-sm leading-relaxed">{cs.desc}</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -144,11 +144,11 @@ export default function BrandingIdentityPage() {
             {process.map((p, i) => (
               <AnimatedSection key={p.step} delay={i * 0.1}>
                 <div className="text-center group">
-                  <div className="w-16 h-16 rounded-full glass-dark border border-[#C8A97E]/20 flex items-center justify-center mx-auto mb-4 group-hover:border-[#C8A97E]/50 transition-all duration-300">
+                  <div className="w-16 h-16 rounded-full glass border border-[#C8A97E]/20 flex items-center justify-center mx-auto mb-4 group-hover:border-[#C8A97E]/50 transition-all duration-300">
                     <span className="text-[#C8A97E] font-display font-bold">{p.step}</span>
                   </div>
-                  <h3 className="text-white font-bold text-sm mb-2">{p.title}</h3>
-                  <p className="text-white/40 text-xs leading-relaxed">{p.desc}</p>
+                  <h3 className="text-[#1A1A1A] font-bold text-sm mb-2">{p.title}</h3>
+                  <p className="text-black/40 text-xs leading-relaxed">{p.desc}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -163,9 +163,9 @@ export default function BrandingIdentityPage() {
           <div className="space-y-4">
             {faqs.map((faq, i) => (
               <AnimatedSection key={i} delay={i * 0.08}>
-                <div className="glass-dark rounded-2xl p-6 border border-white/5">
-                  <h3 className="text-white font-semibold mb-2">{faq.q}</h3>
-                  <p className="text-white/50 text-sm leading-relaxed">{faq.a}</p>
+                <div className="glass rounded-2xl p-6 border border-black/5">
+                  <h3 className="text-[#1A1A1A] font-semibold mb-2">{faq.q}</h3>
+                  <p className="text-black/50 text-sm leading-relaxed">{faq.a}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -177,8 +177,8 @@ export default function BrandingIdentityPage() {
       <section className="py-24 bg-[#080808]">
         <div className="max-w-3xl mx-auto text-center px-4">
           <AnimatedSection>
-            <h2 className="text-4xl font-display font-bold text-white mb-6">Ready to Build Your <span className="text-gradient-gold">Brand?</span></h2>
-            <p className="text-white/60 mb-10">Let's start with a conversation. Reach out directly and we'll get back to you promptly.</p>
+            <h2 className="text-4xl font-display font-bold text-[#1A1A1A] mb-6">Ready to Build Your <span className="text-gradient-gold">Brand?</span></h2>
+            <p className="text-black/60 mb-10">Let's start with a conversation. Reach out directly and we'll get back to you promptly.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={`tel:${SITE_CONFIG.contact1.phone}`} className="btn-gold px-8 py-4 rounded-full text-sm inline-flex items-center justify-center gap-2">
                 <Phone className="w-4 h-4" /> {SITE_CONFIG.contact1.phone}

@@ -15,7 +15,7 @@ export default function PortfolioPage() {
   const filtered = active === 'All' ? PORTFOLIO_ITEMS : PORTFOLIO_ITEMS.filter(p => p.category === active);
 
   return (
-    <div className="bg-[#16161a] pt-20 min-h-screen">
+    <div className="bg-[#FDFBF7] pt-20 min-h-screen">
       {/* Hero */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#16161a] to-[#16161a]" />
@@ -25,10 +25,10 @@ export default function PortfolioPage() {
             <span className="inline-flex items-center gap-2 text-[#C8A97E] text-xs font-semibold tracking-[0.25em] uppercase mb-6">
               <span className="w-8 h-px bg-[#C8A97E]" /> Our Masterpieces <span className="w-8 h-px bg-[#C8A97E]" />
             </span>
-            <h1 className="text-5xl md:text-7xl font-display font-black text-white mb-6">
+            <h1 className="text-5xl md:text-7xl font-display font-black text-[#1A1A1A] mb-6">
               Selected <span className="text-gradient-gold">Works</span>
             </h1>
-            <p className="text-white/60 text-xl max-w-2xl mx-auto leading-relaxed mb-8">
+            <p className="text-black/60 text-xl max-w-2xl mx-auto leading-relaxed mb-8">
               A curated showcase of our finest projects across branding, design, events, and construction.
             </p>
           </AnimatedSection>
@@ -48,7 +48,7 @@ export default function PortfolioPage() {
                 className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
                   active === cat
                     ? 'bg-gradient-to-r from-[#C8A97E] to-[#b8895a] text-black shadow-[0_0_20px_rgba(200,169,126,0.3)]'
-                    : 'glass border border-white/10 text-white/60 hover:text-white hover:border-[#C8A97E]/30'
+                    : 'glass border border-black/5 text-black/60 hover:text-[#1A1A1A] hover:border-[#C8A97E]/30'
                 }`}
               >
                 {cat}
@@ -69,7 +69,7 @@ export default function PortfolioPage() {
                   transition={{ duration: 0.5, delay: (i % 3) * 0.1 }}
                   className="break-inside-avoid"
                 >
-                  <div className="group relative rounded-2xl overflow-hidden img-zoom cursor-pointer border border-white/5 card-hover">
+                  <div className="group relative rounded-2xl overflow-hidden img-zoom cursor-pointer border border-black/5 card-hover">
                     <div className="relative aspect-[4/5]">
                       <Image src={item.image} alt={item.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
                     </div>
@@ -78,8 +78,8 @@ export default function PortfolioPage() {
                       <span className="inline-block px-3 py-1 rounded-full bg-[#C8A97E]/20 border border-[#C8A97E]/30 text-[#C8A97E] text-[10px] font-bold tracking-widest uppercase mb-3">
                         {item.category}
                       </span>
-                      <h3 className="text-white font-display font-bold text-2xl mb-2">{item.title}</h3>
-                      <p className="text-white/60 text-sm">{item.description}</p>
+                      <h3 className="text-[#1A1A1A] font-display font-bold text-2xl mb-2">{item.title}</h3>
+                      <p className="text-black/60 text-sm">{item.description}</p>
                     </div>
                     <div className="absolute top-4 right-4 w-12 h-12 glass rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-50 group-hover:scale-100">
                       <ExternalLink className="w-5 h-5 text-[#C8A97E]" />
@@ -93,11 +93,11 @@ export default function PortfolioPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#1a1a1f]">
+      <section className="py-24 bg-white">
         <div className="max-w-3xl mx-auto text-center px-4">
           <AnimatedSection>
-            <h2 className="text-4xl font-display font-bold text-white mb-6">Impressed by <span className="text-gradient-gold">Our Work?</span></h2>
-            <p className="text-white/60 mb-10 text-lg">Let's create something equally stunning for your brand. Reach out today.</p>
+            <h2 className="text-4xl font-display font-bold text-[#1A1A1A] mb-6">Impressed by <span className="text-gradient-gold">Our Work?</span></h2>
+            <p className="text-black/60 mb-10 text-lg">Let's create something equally stunning for your brand. Reach out today.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={`tel:${SITE_CONFIG.contact1.phone}`} className="btn-gold px-10 py-4 rounded-full text-sm inline-flex items-center justify-center gap-2">
                 <Phone className="w-4 h-4" /> Start a Project

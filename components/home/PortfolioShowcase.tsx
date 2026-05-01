@@ -15,7 +15,7 @@ export default function PortfolioShowcase() {
   const filtered = active === 'All' ? PORTFOLIO_ITEMS : PORTFOLIO_ITEMS.filter(p => p.category === active);
 
   return (
-    <section className="section-padding bg-[#1e1e24]">
+    <section className="section-padding bg-[#F2F0ED]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Our Work"
@@ -33,7 +33,7 @@ export default function PortfolioShowcase() {
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                 active === cat
                   ? 'bg-[#C8A97E] text-black'
-                  : 'glass border border-white/10 text-white/60 hover:text-white hover:border-[#C8A97E]/30'
+                  : 'glass border border-black/5 text-black/60 hover:text-[#1A1A1A] hover:border-[#C8A97E]/30'
               }`}
             >
               {cat}
@@ -64,11 +64,11 @@ export default function PortfolioShowcase() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-400">
                   <span className="text-[#C8A97E] text-xs tracking-wider uppercase mb-1 block">{item.category}</span>
-                  <h3 className="text-white font-display font-bold text-xl">{item.title}</h3>
-                  <p className="text-white/60 text-sm mt-1">{item.description}</p>
+                  <h3 className="text-[#1A1A1A] font-display font-bold text-xl">{item.title}</h3>
+                  <p className="text-black/60 text-sm mt-1">{item.description}</p>
                 </div>
                 <div className="absolute top-4 right-4 w-10 h-10 glass rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <ExternalLink className="w-4 h-4 text-white" />
+                  <ExternalLink className="w-4 h-4 text-[#1A1A1A]" />
                 </div>
               </motion.div>
             ))}

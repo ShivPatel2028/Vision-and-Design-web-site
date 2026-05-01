@@ -15,7 +15,7 @@ const iconMap: Record<string, React.ElementType> = {
 
 export default function ServicesPreview() {
   return (
-    <section className="section-padding bg-[#1e1e24]">
+    <section className="section-padding bg-[#F2F0ED]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="What We Do"
@@ -29,7 +29,7 @@ export default function ServicesPreview() {
             const Icon = iconMap[service.icon] || Palette;
             return (
               <AnimatedSection key={service.id} delay={index * 0.1}>
-                <div className="group relative glass-dark rounded-2xl p-8 hover:border-[#C8A97E]/30 card-hover overflow-hidden cursor-pointer border border-white/5 h-full">
+                <div className="group relative glass rounded-2xl p-8 hover:border-[#C8A97E]/30 card-hover overflow-hidden cursor-pointer border border-black/5 h-full">
                   {/* Background gradient on hover */}
                   <div
                     className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
@@ -46,19 +46,19 @@ export default function ServicesPreview() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-white text-xl font-display font-bold mb-3 group-hover:text-[#C8A97E] transition-colors duration-300">
+                    <h3 className="text-[#1A1A1A] text-xl font-display font-bold mb-3 group-hover:text-[#C8A97E] transition-colors duration-300">
                       {service.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-white/50 text-sm leading-relaxed mb-6">
+                    <p className="text-black/50 text-sm leading-relaxed mb-6">
                       {service.shortDescription}
                     </p>
 
                     {/* Features */}
                     <ul className="space-y-2 mb-8">
                       {service.features.map((feature) => (
-                        <li key={feature} className="flex items-center gap-2 text-xs text-white/40">
+                        <li key={feature} className="flex items-center gap-2 text-xs text-black/40">
                           <span className="w-1 h-1 rounded-full bg-[#C8A97E]" />
                           {feature}
                         </li>

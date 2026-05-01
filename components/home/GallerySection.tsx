@@ -12,7 +12,7 @@ const galleryImages = [
 
 export default function GallerySection() {
   return (
-    <section className="section-padding bg-[#1e1e24]">
+    <section className="section-padding bg-[#F2F0ED]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Creative Gallery"

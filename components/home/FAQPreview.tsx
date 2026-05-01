@@ -25,12 +25,12 @@ export default function FAQPreview() {
         <div className="space-y-3">
           {preview.map((faq, i) => (
             <AnimatedSection key={i} delay={i * 0.08}>
-              <div className="glass-dark rounded-2xl border border-white/5 overflow-hidden hover:border-[#C8A97E]/20 transition-colors duration-300">
+              <div className="glass rounded-2xl border border-black/5 overflow-hidden hover:border-[#C8A97E]/20 transition-colors duration-300">
                 <button
                   className="w-full flex items-center justify-between px-6 py-5 text-left group"
                   onClick={() => setOpenIdx(openIdx === i ? null : i)}
                 >
-                  <span className="text-white font-medium pr-4 group-hover:text-[#C8A97E] transition-colors duration-200">
+                  <span className="text-[#1A1A1A] font-medium pr-4 group-hover:text-[#C8A97E] transition-colors duration-200">
                     {faq.question}
                   </span>
                   <ChevronDown
@@ -45,7 +45,7 @@ export default function FAQPreview() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="px-6 pb-5 text-white/60 text-sm leading-relaxed border-t border-white/5 pt-4">
+                      <div className="px-6 pb-5 text-black/60 text-sm leading-relaxed border-t border-black/5 pt-4">
                         {faq.answer}
                       </div>
                     </motion.div>

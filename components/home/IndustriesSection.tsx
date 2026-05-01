@@ -38,10 +38,10 @@ export default function IndustriesSection() {
                       </span>
                     ))}
                   </div>
-                  <h3 className="text-white font-display font-bold text-2xl mb-2 group-hover:text-[#C8A97E] transition-colors duration-300">
+                  <h3 className="text-[#1A1A1A] font-display font-bold text-2xl mb-2 group-hover:text-[#C8A97E] transition-colors duration-300">
                     {ind.name}
                   </h3>
-                  <p className="text-white/60 text-sm leading-relaxed">{ind.description}</p>
+                  <p className="text-black/60 text-sm leading-relaxed">{ind.description}</p>
                   <div className="mt-4 flex items-center gap-2 text-[#C8A97E] text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                     Learn More <ArrowRight className="w-4 h-4" />
                   </div>

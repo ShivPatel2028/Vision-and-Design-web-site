@@ -31,7 +31,7 @@ export default function SectionHeader({
         </AnimatedSection>
       )}
       <AnimatedSection delay={0.1}>
-        <h2 className={`text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight ${light ? 'text-white' : 'text-white'}`}>
+        <h2 className={`text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight ${light ? 'text-[#1A1A1A]' : 'text-[#1A1A1A]'}`}>
           {title}
           {titleHighlight && (
             <span className="text-gradient-gold"> {titleHighlight}</span>
@@ -40,7 +40,7 @@ export default function SectionHeader({
       </AnimatedSection>
       {description && (
         <AnimatedSection delay={0.2}>
-          <p className={`mt-6 text-lg max-w-2xl leading-relaxed ${light ? 'text-white/60' : 'text-white/60'} ${align === 'center' ? 'text-center' : ''}`}>
+          <p className={`mt-6 text-lg max-w-2xl leading-relaxed ${light ? 'text-black/60' : 'text-black/60'} ${align === 'center' ? 'text-center' : ''}`}>
             {description}
           </p>
         </AnimatedSection>

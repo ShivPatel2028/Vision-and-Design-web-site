@@ -11,7 +11,7 @@ const steps = [
 
 export default function ProcessTimeline() {
   return (
-    <section className="section-padding bg-[#1e1e24]">
+    <section className="section-padding bg-[#F2F0ED]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="How We Work"
@@ -29,14 +29,14 @@ export default function ProcessTimeline() {
               <AnimatedSection key={step.step} delay={i * 0.12}>
                 <div className="relative text-center group">
                   {/* Step number circle */}
-                  <div className="w-24 h-24 rounded-full glass-dark border border-[#C8A97E]/20 flex flex-col items-center justify-center mx-auto mb-6 group-hover:border-[#C8A97E]/60 transition-all duration-300 group-hover:glow-gold">
+                  <div className="w-24 h-24 rounded-full glass border border-[#C8A97E]/20 flex flex-col items-center justify-center mx-auto mb-6 group-hover:border-[#C8A97E]/60 transition-all duration-300 group-hover:glow-gold">
                     <span className="text-[#C8A97E] text-xs tracking-widest uppercase">Step</span>
-                    <span className="text-white font-display font-bold text-2xl">{step.step}</span>
+                    <span className="text-[#1A1A1A] font-display font-bold text-2xl">{step.step}</span>
                   </div>
-                  <h3 className="text-white font-display font-bold text-xl mb-3 group-hover:text-[#C8A97E] transition-colors duration-300">
+                  <h3 className="text-[#1A1A1A] font-display font-bold text-xl mb-3 group-hover:text-[#C8A97E] transition-colors duration-300">
                     {step.title}
                   </h3>
-                  <p className="text-white/50 text-sm leading-relaxed">{step.description}</p>
+                  <p className="text-black/50 text-sm leading-relaxed">{step.description}</p>
                 </div>
               </AnimatedSection>
             ))}
