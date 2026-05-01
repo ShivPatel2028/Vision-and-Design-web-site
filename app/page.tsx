@@ -4,7 +4,6 @@ import ServicesPreview from '@/components/home/ServicesPreview';
 import AboutPreview from '@/components/home/AboutPreview';
 import StatsCounter from '@/components/home/StatsCounter';
 import PortfolioShowcase from '@/components/home/PortfolioShowcase';
-import TestimonialsSlider from '@/components/home/TestimonialsSlider';
 import ProcessTimeline from '@/components/home/ProcessTimeline';
 import ClientLogos from '@/components/home/ClientLogos';
 import GallerySection from '@/components/home/GallerySection';
@@ -35,7 +34,6 @@ export default function HomePage() {
       <PortfolioShowcase />
       <GallerySection />
       <ProcessTimeline />
-      <TestimonialsSlider />
       <ClientLogos />
       <FAQPreview />
       <CTABanner />

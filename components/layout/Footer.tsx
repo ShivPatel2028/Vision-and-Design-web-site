@@ -67,7 +67,7 @@ export default function Footer() {
                 { label: 'Industries', href: '/industries' },
                 { label: 'Blog', href: '/blog' },
                 { label: 'Careers', href: '/careers' },
-                { label: 'Testimonials', href: '/testimonials' },
+
                 { label: 'FAQ', href: '/faq' },
               ].map((link) => (
                 <li key={link.href}>

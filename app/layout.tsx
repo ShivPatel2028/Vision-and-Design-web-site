@@ -6,7 +6,6 @@ import { ThemeProvider } from '@/components/providers/ThemeProvider';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ScrollProgress from '@/components/shared/ScrollProgress';
-import CustomCursor from '@/components/shared/CustomCursor';
 import WhatsAppButton from '@/components/shared/WhatsAppButton';
 
 const inter = Inter({
@@ -33,7 +32,6 @@ export default function RootLayout({
       <body className="bg-[#1e1e24] text-white antialiased">
         <ThemeProvider>
           <ScrollProgress />
-          <CustomCursor />
           <Navbar />
           <main>{children}</main>
           <Footer />

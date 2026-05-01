@@ -5,7 +5,7 @@ import { ArrowRight, Palette, Monitor, Calendar, Sparkles, Building2, Home } fro
 import { SERVICES, TESTIMONIALS, FAQS } from '@/lib/constants';
 import SectionHeader from '@/components/shared/SectionHeader';
 import AnimatedSection from '@/components/shared/AnimatedSection';
-import TestimonialsSlider from '@/components/home/TestimonialsSlider';
+import ProcessTimeline from '@/components/home/ProcessTimeline';
 import FAQPreview from '@/components/home/FAQPreview';
 
 export const metadata: Metadata = {
@@ -112,7 +112,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <TestimonialsSlider />
+
       <FAQPreview />
 
       {/* CTA */}

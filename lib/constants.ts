@@ -88,53 +88,7 @@ export const SERVICES: Service[] = [
   },
 ];
 
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: '1',
-    name: 'Priya Sharma',
-    role: 'CEO',
-    company: 'Luxe Retail Group',
-    content: 'Vision And Design transformed our brand completely. Their attention to detail and creative vision exceeded all our expectations. Truly world-class work.',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1494790108755-2616b612b977?w=200&q=80',
-  },
-  {
-    id: '2',
-    name: 'Arjun Mehta',
-    role: 'Founder',
-    company: 'TechStart Solutions',
-    content: 'The digital design team delivered an exceptional UI/UX that increased our user engagement by 300%. Highly recommend their services to any modern business.',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80',
-  },
-  {
-    id: '3',
-    name: 'Meera Patel',
-    role: 'Event Director',
-    company: 'Elite Events Co.',
-    content: 'Our fashion gala was an unforgettable success. The choreography and event management was flawless. Vision And Design is our go-to creative partner.',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80',
-  },
-  {
-    id: '4',
-    name: 'Rahul Gupta',
-    role: 'MD',
-    company: 'Premier Constructions',
-    content: 'The interior design project for our office was phenomenal. The team understood our vision perfectly and delivered beyond expectations. Outstanding work!',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80',
-  },
-  {
-    id: '5',
-    name: 'Sneha Agarwal',
-    role: 'Brand Manager',
-    company: 'Fashion Forward',
-    content: 'From branding to the runway show choreography, Vision And Design handled everything with grace and professionalism. Our brand has never looked better.',
-    rating: 5,
-    image: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=200&q=80',
-  },
-];
+export const TESTIMONIALS: Testimonial[] = [];
 
 export const STATS: StatItem[] = [
   { value: 150, suffix: '+', label: 'Projects Completed' },
