@@ -73,7 +73,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 **Dhwani Pandya & Vraj Pandya**  
 Founders, Vision And Design  
-📍 Ahmedabad, Gujarat, India  
+📍 Vadodara, Gujarat, India  
 ✉️ vision.design2608@gmail.com  
 💬 +91 63545 13940 | +91 70160 81776
 
