@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone, ArrowRight } from 'lucide-react';
 import { SITE_CONFIG, SERVICES } from '@/lib/constants';
 
@@ -12,14 +13,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#C8A97E] to-[#b8895a] flex items-center justify-center font-bold text-black text-lg">
-                V
-              </div>
-              <div>
-                <div className="font-display font-bold text-white text-lg leading-tight">Vision And</div>
-                <div className="text-[#C8A97E] text-xs tracking-[0.2em] uppercase">Design</div>
-              </div>
+            <Link href="/" className="block mb-6 relative w-[180px] h-[60px]">
+              <Image src="/logo.png" alt="Vision And Design Logo" fill className="object-contain object-left hover:opacity-80 transition-opacity duration-300" />
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6">
               Where Creativity Meets Innovation. A forward-thinking creative agency crafting extraordinary brand experiences.
