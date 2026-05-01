@@ -20,13 +20,13 @@ const services = [
 
 export default function FashionChoreographyPage() {
   return (
-    <div className="bg-[#070707] pt-20">
+    <div className="bg-[#16161a] pt-20">
       {/* Cinematic editorial hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image src="https://images.unsplash.com/photo-1537832816519-689ad163238b?w=1800&q=80" alt="Fashion Choreography" fill className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#070707] via-[#070707]/70 to-[#070707]/20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070707] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#16161a] via-[#16161a]/70 to-[#16161a]/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#16161a] via-transparent to-transparent" />
         </div>
         {/* Editorial floating tag */}
         <div className="absolute top-[20%] right-[10%] hidden lg:block z-10">
@@ -86,7 +86,7 @@ export default function FashionChoreographyPage() {
       </section>
 
       {/* Editorial split layout */}
-      <section className="section-padding bg-[#0A0A0A]">
+      <section className="section-padding bg-[#1a1a1f]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection direction="left">

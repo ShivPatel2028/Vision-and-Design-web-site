@@ -15,7 +15,7 @@ export default function PortfolioShowcase() {
   const filtered = active === 'All' ? PORTFOLIO_ITEMS : PORTFOLIO_ITEMS.filter(p => p.category === active);
 
   return (
-    <section className="section-padding bg-[#0D0D0D]">
+    <section className="section-padding bg-[#1e1e24]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Our Work"

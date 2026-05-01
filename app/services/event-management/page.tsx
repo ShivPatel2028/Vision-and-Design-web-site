@@ -26,13 +26,13 @@ const eventTypes = [
 
 export default function EventManagementPage() {
   return (
-    <div className="bg-[#070707] pt-20">
+    <div className="bg-[#16161a] pt-20">
       {/* Cinematic Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=1800&q=80" alt="Event Management" fill className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#070707] to-[#070707]/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070707] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#16161a] to-[#16161a]/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#16161a] via-transparent to-transparent" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-2xl">
@@ -81,7 +81,7 @@ export default function EventManagementPage() {
       </section>
 
       {/* Packages */}
-      <section className="section-padding bg-[#0A0A0A]">
+      <section className="section-padding bg-[#1a1a1f]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader eyebrow="Pricing" title="Event" titleHighlight="Packages" />
           <div className="grid md:grid-cols-3 gap-6">

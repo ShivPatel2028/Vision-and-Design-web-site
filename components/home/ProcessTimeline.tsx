@@ -11,7 +11,7 @@ const steps = [
 
 export default function ProcessTimeline() {
   return (
-    <section className="section-padding bg-[#0D0D0D]">
+    <section className="section-padding bg-[#1e1e24]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="How We Work"

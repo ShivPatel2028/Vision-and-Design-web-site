@@ -16,10 +16,10 @@ export default function BlogPage() {
   const regularPosts = BLOG_POSTS.slice(1);
 
   return (
-    <div className="bg-[#070707] pt-20 min-h-screen">
+    <div className="bg-[#16161a] pt-20 min-h-screen">
       {/* Hero */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#070707] to-[#070707]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#16161a] to-[#16161a]" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <span className="inline-flex items-center gap-2 text-[#C8A97E] text-xs font-semibold tracking-[0.25em] uppercase mb-6">
@@ -43,7 +43,7 @@ export default function BlogPage() {
               <div className="w-full lg:w-3/5 aspect-video lg:aspect-auto relative img-zoom">
                 <Image src={featuredPost.image} alt={featuredPost.title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 60vw" />
               </div>
-              <div className="w-full lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center bg-gradient-to-r from-[#070707] to-[#0D0D0D]">
+              <div className="w-full lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center bg-gradient-to-r from-[#16161a] to-[#1e1e24]">
                 <div className="flex items-center gap-4 mb-6">
                   <span className="px-3 py-1 rounded-full bg-[#C8A97E]/20 text-[#C8A97E] text-[10px] uppercase tracking-widest font-bold">Featured</span>
                   <span className="text-white/40 text-xs">{featuredPost.category}</span>
@@ -64,7 +64,7 @@ export default function BlogPage() {
       </section>
 
       {/* Grid Posts */}
-      <section className="section-padding bg-[#0A0A0A]">
+      <section className="section-padding bg-[#1a1a1f]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader eyebrow="Latest" title="Recent" titleHighlight="Articles" align="left" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

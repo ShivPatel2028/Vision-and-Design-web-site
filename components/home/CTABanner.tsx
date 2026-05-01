@@ -5,8 +5,8 @@ import { SITE_CONFIG } from '@/lib/constants';
 
 export default function CTABanner() {
   return (
-    <section className="py-24 relative overflow-hidden bg-[#0A0A0A]">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#C8A97E]/10 via-[#1A1A2E]/50 to-[#0A0A0A]" />
+    <section className="py-24 relative overflow-hidden bg-[#1a1a1f]">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#C8A97E]/10 via-[#1A1A2E]/50 to-[#1a1a1f]" />
       
       {/* Decorative Orbs */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#C8A97E]/10 rounded-full blur-[100px] pointer-events-none" />
@@ -16,7 +16,7 @@ export default function CTABanner() {
         <AnimatedSection>
           <div className="glass-dark rounded-3xl p-10 md:p-16 border border-[#C8A97E]/20 text-center relative overflow-hidden group shadow-[0_0_50px_rgba(200,169,126,0.05)]">
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1600&q=80')] opacity-[0.03] mix-blend-overlay group-hover:opacity-[0.06] transition-opacity duration-700" />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0A0A0A]/80" />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1a1a1f]/80" />
 
             <div className="relative z-10">
               <span className="inline-flex items-center gap-2 text-[#C8A97E] text-xs font-semibold tracking-[0.25em] uppercase mb-6">

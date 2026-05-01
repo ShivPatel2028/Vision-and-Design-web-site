@@ -12,10 +12,10 @@ export default function FAQPage() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
   return (
-    <div className="bg-[#070707] pt-20 min-h-screen">
+    <div className="bg-[#16161a] pt-20 min-h-screen">
       {/* Hero */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#070707] to-[#070707]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#16161a] to-[#16161a]" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <span className="inline-flex items-center gap-2 text-[#C8A97E] text-xs font-semibold tracking-[0.25em] uppercase mb-6">
@@ -71,7 +71,7 @@ export default function FAQPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#0A0A0A]">
+      <section className="py-24 bg-[#1a1a1f]">
         <div className="max-w-3xl mx-auto text-center px-4">
           <AnimatedSection>
             <h2 className="text-4xl font-display font-bold text-white mb-6">Still have <span className="text-gradient-gold">Questions?</span></h2>

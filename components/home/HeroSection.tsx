@@ -91,7 +91,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#070707]">
+    <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#16161a]">
       {/* Particle canvas */}
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none z-[1]" />
 
@@ -242,7 +242,7 @@ export default function HeroSection() {
       </motion.div>
 
       {/* Bottom vignette */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#070707] to-transparent z-10" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#16161a] to-transparent z-10" />
     </section>
   );
 }

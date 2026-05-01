@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${playfair.variable}`}>
-      <body className="bg-[#0D0D0D] text-white antialiased">
+      <body className="bg-[#1e1e24] text-white antialiased">
         <ThemeProvider>
           <ScrollProgress />
           <CustomCursor />

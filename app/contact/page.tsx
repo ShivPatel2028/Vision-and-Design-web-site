@@ -19,10 +19,10 @@ const contacts = [
 
 export default function ContactPage() {
   return (
-    <div className="bg-[#070707] pt-20 min-h-screen">
+    <div className="bg-[#16161a] pt-20 min-h-screen">
       {/* Hero */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1A1A2E] via-[#070707] to-[#070707]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1A1A2E] via-[#16161a] to-[#16161a]" />
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#C8A97E]/10 rounded-full blur-[120px]" />
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#C8A97E]/5 rounded-full blur-[120px]" />
         
@@ -71,7 +71,7 @@ export default function ContactPage() {
       </section>
 
       {/* Social & Map */}
-      <section className="section-padding bg-[#0A0A0A]">
+      <section className="section-padding bg-[#1a1a1f]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection direction="left">
@@ -88,7 +88,7 @@ export default function ContactPage() {
                 {/* Simulated Premium Map Embed via Image or Custom Styled Iframe. Using a placeholder image for visual quality as requested. */}
                  <div className="absolute inset-0 img-zoom w-full h-full rounded-2xl overflow-hidden">
                     <Image src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80" alt="Map Location" fill className="object-cover opacity-60 mix-blend-luminosity group-hover:mix-blend-normal transition-all duration-700" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#070707] to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#16161a] to-transparent" />
                     <div className="absolute inset-0 bg-[#C8A97E]/10" />
                     {/* Pin */}
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">

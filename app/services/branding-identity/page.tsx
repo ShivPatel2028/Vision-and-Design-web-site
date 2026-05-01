@@ -28,12 +28,12 @@ const faqs = [
 
 export default function BrandingIdentityPage() {
   return (
-    <div className="bg-[#0D0D0D] pt-20">
+    <div className="bg-[#1e1e24] pt-20">
       {/* Hero */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
           <Image src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=1600&q=80" alt="Branding" fill className="object-cover opacity-20" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/80 via-[#0D0D0D]/60 to-[#0D0D0D]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#1e1e24]/80 via-[#1e1e24]/60 to-[#1e1e24]" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">

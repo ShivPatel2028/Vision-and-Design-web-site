@@ -26,10 +26,10 @@ const openPositions = [
 
 export default function CareersPage() {
   return (
-    <div className="bg-[#070707] pt-20 min-h-screen">
+    <div className="bg-[#16161a] pt-20 min-h-screen">
       {/* Hero */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#070707] to-[#070707]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#16161a] to-[#16161a]" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <span className="inline-flex items-center gap-2 text-[#C8A97E] text-xs font-semibold tracking-[0.25em] uppercase mb-6">
@@ -80,7 +80,7 @@ export default function CareersPage() {
       </section>
 
       {/* Open Positions (No Forms, Direct Email) */}
-      <section className="section-padding bg-[#0A0A0A]">
+      <section className="section-padding bg-[#1a1a1f]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader eyebrow="Opportunities" title="Open" titleHighlight="Roles" />
           <div className="space-y-4">

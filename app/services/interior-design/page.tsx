@@ -28,13 +28,13 @@ const process = [
 
 export default function InteriorDesignPage() {
   return (
-    <div className="bg-[#070707] pt-20">
+    <div className="bg-[#16161a] pt-20">
       {/* Cinematic editorial hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1800&q=80" alt="Interior Design" fill className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#070707] via-[#070707]/60 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070707] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#16161a] via-[#16161a]/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#16161a] via-transparent to-transparent" />
         </div>
         {/* Floating room card */}
         <div className="absolute top-1/4 right-[6%] hidden lg:block z-10">
@@ -102,7 +102,7 @@ export default function InteriorDesignPage() {
       </section>
 
       {/* Luxury gallery row */}
-      <section className="section-padding bg-[#0A0A0A]">
+      <section className="section-padding bg-[#1a1a1f]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader eyebrow="Our Work" title="Signature" titleHighlight="Projects" />
           <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-none">
@@ -142,7 +142,7 @@ export default function InteriorDesignPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#0A0A0A]">
+      <section className="py-24 bg-[#1a1a1f]">
         <div className="max-w-3xl mx-auto text-center px-4">
           <AnimatedSection>
             <h2 className="text-4xl font-display font-bold text-white mb-4">Transform Your <span className="text-gradient-gold">Space Today</span></h2>

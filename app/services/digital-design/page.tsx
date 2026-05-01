@@ -27,13 +27,13 @@ const faqs = [
 
 export default function DigitalDesignPage() {
   return (
-    <div className="bg-[#070707] pt-20">
+    <div className="bg-[#16161a] pt-20">
       {/* Cinematic Hero */}
       <section className="relative min-h-[85vh] flex items-end pb-24 overflow-hidden">
         <div className="absolute inset-0">
           <Image src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=1800&q=80" alt="Digital Design" fill className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#070707] via-[#070707]/80 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070707] via-transparent to-[#070707]/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#16161a] via-[#16161a]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#16161a] via-transparent to-[#16161a]/40" />
         </div>
         {/* Floating UI mockup element */}
         <div className="absolute top-1/4 right-[5%] hidden lg:block z-10">
@@ -100,7 +100,7 @@ export default function DigitalDesignPage() {
       </section>
 
       {/* Bento showcase */}
-      <section className="section-padding bg-[#0A0A0A]">
+      <section className="section-padding bg-[#1a1a1f]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader eyebrow="Our Work" title="Design" titleHighlight="Showcase" />
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[200px]">
@@ -137,7 +137,7 @@ export default function DigitalDesignPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#0A0A0A]">
+      <section className="py-24 bg-[#1a1a1f]">
         <div className="max-w-3xl mx-auto text-center px-4">
           <AnimatedSection>
             <h2 className="text-4xl font-display font-bold text-white mb-4">Ready for <span className="text-gradient-gold">World-Class Design?</span></h2>

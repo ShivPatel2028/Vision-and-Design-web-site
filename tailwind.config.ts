@@ -35,7 +35,7 @@ const config: Config = {
           900: '#0D0D1A',
         },
         cream: '#E8D5B7',
-        'bg-dark': '#0D0D0D',
+        'bg-dark': '#1e1e24',
         'bg-light': '#F8F6F3',
       },
       fontFamily: {
@@ -72,7 +72,7 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'hero-gradient': 'linear-gradient(135deg, #0D0D0D 0%, #1A1A2E 50%, #0F3460 100%)',
+        'hero-gradient': 'linear-gradient(135deg, #1e1e24 0%, #1A1A2E 50%, #0F3460 100%)',
         'gold-gradient': 'linear-gradient(135deg, #C8A97E 0%, #E8D5B7 50%, #b8895a 100%)',
       },
       backdropBlur: {

@@ -35,10 +35,10 @@ const values = [
 
 export default function AboutPage() {
   return (
-    <div className="bg-[#0D0D0D] pt-20">
+    <div className="bg-[#1e1e24] pt-20">
       {/* Hero */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#0D0D0D] to-[#0D0D0D]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#1e1e24] to-[#1e1e24]" />
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#C8A97E]/5 rounded-full blur-[120px]" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-3xl">
@@ -146,7 +146,7 @@ export default function AboutPage() {
                 <AnimatedSection key={item.year} delay={i * 0.08} direction={i % 2 === 0 ? 'left' : 'right'}>
                   <div className={`relative flex items-start gap-8 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                     {/* Year bubble */}
-                    <div className="relative z-10 shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#0D0D0D] border-2 border-[#C8A97E] flex items-center justify-center md:absolute md:left-1/2 md:-translate-x-1/2">
+                    <div className="relative z-10 shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#1e1e24] border-2 border-[#C8A97E] flex items-center justify-center md:absolute md:left-1/2 md:-translate-x-1/2">
                       <span className="text-[#C8A97E] font-bold text-xs md:text-sm">{item.year}</span>
                     </div>
                     {/* Card */}
@@ -212,7 +212,7 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#C8A97E]/10 via-[#1A1A2E] to-[#0D0D0D]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#C8A97E]/10 via-[#1A1A2E] to-[#1e1e24]" />
         <div className="relative z-10 max-w-3xl mx-auto text-center px-4">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">

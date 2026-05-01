@@ -15,10 +15,10 @@ export default function PortfolioPage() {
   const filtered = active === 'All' ? PORTFOLIO_ITEMS : PORTFOLIO_ITEMS.filter(p => p.category === active);
 
   return (
-    <div className="bg-[#070707] pt-20 min-h-screen">
+    <div className="bg-[#16161a] pt-20 min-h-screen">
       {/* Hero */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#070707] to-[#070707]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#16161a] to-[#16161a]" />
         <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-[#C8A97E]/5 rounded-full blur-[120px]" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
@@ -73,7 +73,7 @@ export default function PortfolioPage() {
                     <div className="relative aspect-[4/5]">
                       <Image src={item.image} alt={item.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#070707] via-[#070707]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#16161a] via-[#16161a]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-6 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                       <span className="inline-block px-3 py-1 rounded-full bg-[#C8A97E]/20 border border-[#C8A97E]/30 text-[#C8A97E] text-[10px] font-bold tracking-widest uppercase mb-3">
                         {item.category}
@@ -93,7 +93,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#0A0A0A]">
+      <section className="py-24 bg-[#1a1a1f]">
         <div className="max-w-3xl mx-auto text-center px-4">
           <AnimatedSection>
             <h2 className="text-4xl font-display font-bold text-white mb-6">Impressed by <span className="text-gradient-gold">Our Work?</span></h2>

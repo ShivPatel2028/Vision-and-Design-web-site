@@ -9,7 +9,7 @@
   --gold-light: #E8D5B7;
   --gold-dark: #8B6914;
   --navy: #1A1A2E;
-  --bg: #070707;
+  --bg: #16161a;
 }
 
 html {
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background: #070707;
+  background: #16161a;
   color: #ffffff;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -27,7 +27,7 @@ body {
 
 /* ── Scrollbar ────────────────── */
 ::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: #070707; }
+::-webkit-scrollbar-track { background: #16161a; }
 ::-webkit-scrollbar-thumb { background: linear-gradient(#C8A97E, #E8D5B7); border-radius: 2px; }
 
 /* ── Glass Variants ───────────── */
@@ -75,7 +75,7 @@ body {
   .btn-gold {
     position: relative;
     background: linear-gradient(135deg, #C8A97E 0%, #A07840 100%);
-    color: #070707;
+    color: #16161a;
     font-weight: 700;
     letter-spacing: 0.04em;
     transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);

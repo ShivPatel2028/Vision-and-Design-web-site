@@ -20,13 +20,13 @@ const services = [
 
 export default function ConstructionPage() {
   return (
-    <div className="bg-[#070707] pt-20">
+    <div className="bg-[#16161a] pt-20">
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=80" alt="Construction" fill className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#070707] to-[#070707]/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070707] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#16161a] to-[#16161a]/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#16161a] via-transparent to-transparent" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-2xl">
@@ -74,7 +74,7 @@ export default function ConstructionPage() {
       </section>
 
       {/* Project Gallery */}
-      <section className="section-padding bg-[#0A0A0A]">
+      <section className="section-padding bg-[#1a1a1f]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader eyebrow="Our Projects" title="Construction" titleHighlight="Portfolio" />
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -122,7 +122,7 @@ export default function ConstructionPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#0A0A0A]">
+      <section className="py-24 bg-[#1a1a1f]">
         <div className="max-w-3xl mx-auto text-center px-4">
           <AnimatedSection>
             <h2 className="text-4xl font-display font-bold text-white mb-4">Start Your <span className="text-gradient-gold">Construction Project</span></h2>
